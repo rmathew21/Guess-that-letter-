@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+
 <head>
     <meta charset="UTF-8">
     <title>What's that letter?</title>
@@ -8,21 +9,29 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../Bootstrap-Portfolio/style.css">
 </head>
+
 <body>
 
-    <div id="game">
-        <h1>Guess what letter I'm thinking of</h1>
-    </div>
+    <!-- The title of the page -->
+    <h1>What's that letter?</h1>
 
-    <div class="form">
-        <label for="guessField">Enter a guess: </label>
-        <input type = "text" id = "guessField" class = "guessField">
-        <input type = "submit" value = "Submit guess"
-               class = "guessSubmit" id = "submitguess">
-    </div>
+    <p>Guess what letter I'm thinking of</p>
 
-        <script type="text/javascript" src="assets/javascript/game.js"> 
-        </script>
+    <!-- This is where we will have the win counter in HTML. It initially shows 0 -->
+    <p>Wins: <span id="wins">0</span></p>
+
+    <!-- This is where we will have the loss counter in HTML. It initially shows 0 -->
+    <p>Losses: <span id="losses">0</span></p>
+
+    <!-- This is where we will post the guesses left. Initially nothing is shown. -->
+    <p>Guesses Left: <span id="guesses-left"></span></p>
+
+    <!-- This is where we will post the guesses so far. Initially nothing is shown. -->
+    <p>Your Guesses so far: <span id="guesses-so-far"></span></p>
+
+    <!-- Link to JavaScript game.js -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
     
 </body>
+
 </html>
